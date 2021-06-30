@@ -1,0 +1,45 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?54e1eee097fbae1575826daa5cbb83ad") format("truetype"),
+url("./flaticon.woff?54e1eee097fbae1575826daa5cbb83ad") format("woff"),
+url("./flaticon.woff2?54e1eee097fbae1575826daa5cbb83ad") format("woff2"),
+url("./flaticon.eot?54e1eee097fbae1575826daa5cbb83ad#iefix") format("embedded-opentype"),
+url("./flaticon.svg?54e1eee097fbae1575826daa5cbb83ad#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "dialog": "\f101",
+    "haram": "\f102",
+    "halal-sign": "\f103",
+    "file": "\f104",
+    "caution-sign": "\f105",
+);
+
+.flaticon-dialog:before {
+    content: map-get($flaticon-map, "dialog");
+}
+.flaticon-haram:before {
+    content: map-get($flaticon-map, "haram");
+}
+.flaticon-halal-sign:before {
+    content: map-get($flaticon-map, "halal-sign");
+}
+.flaticon-file:before {
+    content: map-get($flaticon-map, "file");
+}
+.flaticon-caution-sign:before {
+    content: map-get($flaticon-map, "caution-sign");
+}
