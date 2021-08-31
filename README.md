@@ -3,6 +3,9 @@ A website that finds the Islamic ruling (halal or haram) of food ingredients.
 
 ### The website will be available soon on halal-check.herokuapp.com
 
+# Run in dev mode
+Download files and run ```node server.js``` or ```nodemon server.js``` in your terminal
+
 # How to use
 <img src="readme-images/halalcheck.PNG" width=500 height=500>
 Enter ingredients in the text box and click the "Add" button to add them to the list.
